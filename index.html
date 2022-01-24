@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">código secreto</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label class="letra">Solo letras minúsculas, sin acento</label>
+        <textarea class="text-input" type="textarea" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" style="overflow: hidden;" ></textarea>
+        <input class="btn" type="button" value="Encriptar" id="btn-encriptar" onclick="encriptar()"> 
+        <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar" onclick="desencriptar()">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje Secreto:</h2>
+      
+      <textarea class="text-input" type="text" id="msg" style="overflow: hidden;"></textarea>
+      <input class="btn-copy" type="image" src="portapapeles.png" width="60" height="60" value="Copiar" id="btn-copy" onclick="copiar()" title="Copiar texto al portapapeles">
+    </section>
+   
+  </main>
+  <script src="script.js"></script>
+  <footer>Derechos Reservados©Angelica Grifaldo</footer>
+</body>
+</html>
